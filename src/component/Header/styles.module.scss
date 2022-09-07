@@ -1,0 +1,38 @@
+@import "../../scss/mixi";
+.root {
+  background: #00598B;
+  padding: 1rem 0;
+  .container{
+    @include fb(c,sb);
+  }
+  h1{
+    text-transform: uppercase;
+    @include font(3.7,4.4,500);
+    color: #FFFFFF;
+  }
+  ul{
+    @include fb(c,c);
+    background: #427897;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 1.2rem 0;
+    border-radius: 7px;
+  }
+  li{
+    @include fb(c,c);
+    color:#fff;
+    padding: 1rem;
+    &:not(:last-child){
+      border-right: 1px solid #FFFFFF;
+    }
+  }
+  p{
+    @include font(2.3,2.8,400);
+    color:#fff;
+    padding-right: 1rem;
+  }
+  span{
+    @include font(1.7,2.1,400);
+    color:#fff;
+
+  }
+}

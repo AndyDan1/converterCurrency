@@ -1,0 +1,56 @@
+@import "../../scss/mixi";
+
+.root {
+  .select{
+    position: relative;
+    width: 100%;
+    max-width: 34rem;
+    margin-bottom: 1rem;
+    background: #fff;
+    //@include br();
+    @include fb(c,sb);
+    .select_currency{
+      @include font(2,2,500);
+      padding-left: 1rem;
+      p{
+        @include fb();
+        svg{
+          width: 4rem;
+          margin-right: 1rem;
+        }
+      }
+    }
+    .arrow{
+      transition: all .7s ease;
+      &_active{
+        transform: rotate(180deg);
+      }
+    }
+    ul{
+      position: absolute;
+      top: 5rem;
+      display: none;
+      padding: 1rem;
+      background: grey;
+      width: 100%;
+      li{
+        @include fb();
+        @include font(2,2,500);
+        padding: 1rem 0;
+        cursor: pointer;
+        width: 100%;
+        &:hover{
+          background: red;
+        }
+        svg{
+          width: 4rem;
+          margin-right: 1rem;
+        }
+      }
+    }
+    .active{
+      display: block;
+    }
+
+  }
+}

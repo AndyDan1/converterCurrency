@@ -1,0 +1,19 @@
+@import "../../scss/mixi";
+.root {
+  background: #00598B;
+  margin: 20rem auto;
+  height: 26rem;
+  width: 100%;
+  max-width: 75rem;
+  border:1px solid red;
+  @include fb(c,c);
+
+  .swap{
+    cursor: pointer;
+  }
+  input{
+    background: #fff;
+    padding: 1.5rem;
+    @include font(2.5,2.5,500);
+  }
+}
